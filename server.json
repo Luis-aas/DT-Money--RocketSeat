@@ -1,0 +1,36 @@
+{
+  "transactions": [
+    {
+      "id": 1,
+      "description": "Desenvolvimento de site",
+      "type": "income",
+      "category": "Venda",
+      "price": 14800,
+      "createdAt": "2024-07-03T16:52:12.586Z"
+    },
+    {
+      "id": 2,
+      "description": "Microondas",
+      "type": "outcome",
+      "category": "Eletrodomestico",
+      "price": 700,
+      "createdAt": "2024-07-03T16:00:13.586Z"
+    },
+    {
+      "description": "Role com a Gata",
+      "type": "outcome",
+      "category": "Role",
+      "price": 10,
+      "createdAt": "2024-07-15T20:00:37.190Z",
+      "id": 3
+    },
+    {
+      "description": "Role com a Gata dnv",
+      "type": "outcome",
+      "category": "Role",
+      "price": 18,
+      "createdAt": "2024-07-15T21:45:13.221Z",
+      "id": 4
+    }
+  ]
+}
