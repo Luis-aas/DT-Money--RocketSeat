@@ -1,30 +1,41 @@
-# React + TypeScript + Vite
+# DT-Money - Controle Financeiro
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O **DT-Money** é um aplicativo de controle financeiro desenvolvido durante o curso de React da Rocketseat. A aplicação permite o gerenciamento de transações financeiras, incluindo entradas e saídas de dinheiro, com um painel de resumo de saldo total.
 
-Currently, two official plugins are available:
+Além das funcionalidades do curso, foram implementados botões de filtragem de **entradas**, **saídas** e **total**, proporcionando uma experiência mais dinâmica e personalizada ao usuário.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologias Utilizadas
+- **React**: Biblioteca principal para a construção da interface.
+- **TypeScript**: Para garantir tipagem estática e maior segurança no código.
+- **Vite**: Para otimizar o processo de build e desenvolvimento.
+- **JSON Server**: Para simular um backend com um banco de dados em JSON para armazenar as transações.
 
-## Expanding the ESLint configuration
+## Funcionalidades
+- **Adicionar Transações**: É possível cadastrar entradas e saídas, informando a descrição, valor e categoria.
+- **Visualizar Transações**: As transações são listadas com a descrição, tipo (entrada/saída), valor e categoria.
+- **Resumo Financeiro**: Um painel de resumo que mostra as entradas, saídas e o saldo total.
+- **Filtragem**: Botões de filtragem por entradas, saídas e total, permitindo uma visualização mais detalhada.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Como Rodar o Projeto
 
-- Configure the top-level `parserOptions` property like this:
+1. Clone o repositório:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+   ```bash
+   git clone https://github.com/Luis-aas/DT-Money--RocketSeat.git
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Instale as dependências:
+
+   ```powershell
+   npm install
+
+3. Execute o projeto:
+   ```powershell
+   npm run dev
+
+4. Abra o navegador e acesse http://localhost:3000.
+
+
+## Melhorias Futuras
+
+- **Botão para Excluir Transações**: Adicionar a funcionalidade para excluir transações diretamente na interface e, consequentemente, removê-las do banco de dados.
+- **Filtragem por Mês**: Implementar um filtro para visualizar transações por mês, facilitando a análise de despesas e receitas em períodos específicos.
